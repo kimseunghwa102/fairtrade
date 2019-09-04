@@ -1,0 +1,47 @@
+
+#grid ol{
+  border-right:1px solid gray;
+  width:100px;
+  margin:0px;
+  padding:50px;
+   }
+ @media(max-width:400px) {
+      ol{
+        display:none;
+      }
+
+h2 {
+  text-align: center;
+}
+
+}
+.saw{
+  color:gray;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+
+}
+#active{
+  color:red;
+
+}
+#articel{
+  padding:58px;
+  padding-top:0px;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  border-bottom:1px solid gray;
+  padding:30px;margin:0px;
+}
+.see{
+  color:black;
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+  color:black;
+}
