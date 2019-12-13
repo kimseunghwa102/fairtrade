@@ -17,18 +17,14 @@ td{
   width: 500px;
   height: 1fr;
   margin-left: auto;o;
-}  @media(max-width:350px) {
+}
+@media(max-width:350px) {
 
   table, td {
     border: 1px solid #bcbcbc;
     text-align: center;
 
       height: 200px;
-  }
-  td{
-    width: 500px;
-    height: 1fr;
-    margin-left: auto;o;
   }
 }
 
