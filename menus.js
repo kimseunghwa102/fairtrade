@@ -27,7 +27,7 @@ document.write( '    <tr>')
 document.write( '      <th>'+exprc[6]+'</th>')
 document.write( '      <td>  <audio controls>')
 document.write( '          <source src="よいお年お.mp3" type="audio/mp3">')
-document.write( '          </audio></td>')
+document.write( '          </audio></td >')
 document.write( '    </tr>')
 document.write( '  </table>')
 };
