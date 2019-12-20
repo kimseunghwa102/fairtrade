@@ -41,3 +41,14 @@ table td{
   text-align: center;
   background-color: #eee;
   padding-top: : 10px 0;}
+
+a{
+  font-size:30px;
+  text-decoration-line: none;
+  color: red;
+}
+  @media(min-width: 1200px) {
+  a{
+    display: none;
+  }
+  }

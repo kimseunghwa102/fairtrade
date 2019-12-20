@@ -1,8 +1,8 @@
 var menu = ['なんかしたいハングル教室']
 var menuA = ['今日の表現']
-var menuB = ['文法 <br>　（準備中）']
-var menuC = ['ハングル <br>　（準備中）']
-var menuD = ['トイレ韓国語<br>（準備中）']
+var menuB = ['文法　（準備中）']
+var menuC = ['ハングル　（準備中）']
+var menuD = ['トイレ韓国語　（準備中）']
 
 var expr = ['日本語表現','あけましておめでとうございます.','韓国表現','새해복 많이 받으세요.','発音','sae hae bog man hi ba deu se yo.','録音']
 var expra = ['日本語表現','今年もよろしくお願いします','韓国表現','올해도 잘 부탁드립니다.','発音','ol hae do jal bu tag deu lib ni da.','録音']
