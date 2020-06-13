@@ -4,7 +4,7 @@ The main purpose is to provide problems for Japanese students to understand abou
 
 ## Site address
 
-https://kimseunghwa102.github.io/fairtrade/
+https://kimseunghwa102.github.io/fairtrade/index
 
 ## service
 * 様々なフェアトレードの問題を無料で提供する
