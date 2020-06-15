@@ -18,7 +18,11 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
-
+#map { position: absolute; top: 0; bottom: 0; width: 100%; color: black}
+.mapboxgl-popup {
+max-width: 400px;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
 .top-wrapper {
   padding: 180px 0 100px 0;
   /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
