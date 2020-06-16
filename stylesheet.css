@@ -17,6 +17,7 @@ a {
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
+  color: red;
 }
 #map { position: absolute; top: 0; bottom: 0; width: 100%; color: black}
 .mapboxgl-popup {
