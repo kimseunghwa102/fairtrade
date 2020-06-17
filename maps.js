@@ -76,7 +76,7 @@ map.addSource('places', {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>sisam</strong><p><a href="https://sisam.jp/" target="_blank" title="Opens in a new window">sisamは、</a>1999年の創業以来、フェアトレードに事業として携わっています。フェアトレードとはお買いものによって社会経済的に弱い立場にいる人たちの暮らしを支える仕組みであり、そのフェアトレード商品や考え方を広めていくこと自体が社会的なアクションだと考えています。<br>TEL075-212-1653<br> 営業時：11:30時から21時まで<br>住所：〒604-8041 京都府京都市中京区裏寺町 通蛸薬師上ル裏寺町591</p>',
+'<strong>sisam裏寺通店</strong><p><a href="https://sisam.jp/" target="_blank" title="Opens in a new window">sisamは、</a>1999年の創業以来、フェアトレードに事業として携わっています。フェアトレードとはお買いものによって社会経済的に弱い立場にいる人たちの暮らしを支える仕組みであり、そのフェアトレード商品や考え方を広めていくこと自体が社会的なアクションだと考えています。<br>TEL075-212-1653<br> 営業時：11:30時から21時まで<br>住所：〒604-8041 京都府京都市中京区裏寺町 通蛸薬師上ル裏寺町591</p>',
 'icon': 'rocket'
 },
 'geometry': {
@@ -88,36 +88,72 @@ map.addSource('places', {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>Muhsinah</strong><p>Jazz-influenced hip hop artist <a href="http://www.muhsinah.com" target="_blank" title="Opens in a new window">Muhsinah</a> plays the <a href="http://www.blackcatdc.com">Black Cat</a> (1811 14th Street NW) tonight with <a href="http://www.exitclov.com" target="_blank" title="Opens in a new window">Exit Clov</a> and <a href="http://godsilla.bandcamp.com" target="_blank" title="Opens in a new window">Gods’illa</a>. 9:00 p.m. $12.</p>',
-'icon': 'music'
+'<strong>JIPPO(COFFEE)</strong><p><a href="https://jippo.or.jp/">JIPPO</a>は、現地調査が必要。<br>検証されていない。</p>',
+'icon': 'rocket'
 },
 'geometry': {
 'type': 'Point',
-'coordinates': [-77.031706, 38.914581]
+'coordinates': [135.752268, 34.992977]
 }
 },
 {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>A Little Night Music</strong><p>The Arlington Players\' production of Stephen Sondheim\'s  <a href="http://www.thearlingtonplayers.org/drupal-6.20/node/4661/show" target="_blank" title="Opens in a new window"><em>A Little Night Music</em></a> comes to the Kogod Cradle at The Mead Center for American Theater (1101 6th Street SW) this weekend and next. 8:00 p.m.</p>',
-'icon': 'music'
+'<strong>Kitten Company Cafe</strong><p><a href="http://kittencompany.net/" target="_blank" title="Opens in a new window"><em>Kitten Company Cafe</em></a>は、キトゥンカンパニー は…、京都・五条烏丸でオーガニックな食材のドリンク・フードメニューを提供していてる茶店。ベジタリアンやビーガンのみんなにもニッコリ楽しんでもらえます。<br>TEL075-344-1591<br> 営業時：11:00時から21時まで(土日は休み)<br>住所：〒600-8170 京都府京都市下京区五条烏丸西入る上諏訪町２９４−１</p>',
+'icon': 'rocket'
 },
 'geometry': {
 'type': 'Point',
-'coordinates': [-77.020945, 38.878241]
+'coordinates': [135.7588714, 34.9958728]
 }
 },
 {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>Truckeroo</strong><p><a href="http://www.truckeroodc.com/www/" target="_blank">Truckeroo</a> brings dozens of food trucks, live music, and games to half and M Street SE (across from Navy Yard Metro Station) today from 11:00 a.m. to 11:00 p.m.</p>',
-'icon': 'music'
+'<strong>かぜのね</strong><p><a href="#">かぜのね</a>は、現場検証が必要。</p>',
+'icon': 'rocket'
 },
 'geometry': {
 'type': 'Point',
-'coordinates': [-77.007481, 38.876516]
+'coordinates': [135.7715893, 35.029902]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>京都・本店 SISAM</strong><p><a href="https://sisam.jp/">SISAM本店</a>は、1999年の創業以来、フェアトレードに事業として携わっています。フェアトレードとはお買いものによって社会経済的に弱い立場にいる人たちの暮らしを支える仕組みであり、そのフェアトレード商品や考え方を広めていくこと自体が社会的なアクションだと考えています。<br>TEL:075-724-5688<br> 営業時：11:00時から19:30時まで<br>住所：〒606-8224 京都府京都市左京区北白川追分町８０−１</p>',
+'icon': 'rocket'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [135.7800156, 35.0288435]　
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>なやカフェ</strong><p><a href="https://twitter.com/naya_cafe">なやカフェは</a>現場検証が必要。<br>TEL075-<br> 営業時：12:00から20:00まで。<br>火曜日だけオープン<br>住所:〒606-8277 京都府京都市左京区北白川堂ノ前町１ デュ北白川102</p>',
+'icon': 'rocket'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [135.7890406, 35.0319354]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong></strong><p><a href="#"></a><br>TEL075-<br> 営業時：時から時まで(休み)<br>住所:</p>',
+'icon': 'rocket'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [, ]
 }
 }
 ]
@@ -163,4 +199,3 @@ map.on('mouseleave', 'places', function() {
 map.getCanvas().style.cursor = '';
 });
 });
-
