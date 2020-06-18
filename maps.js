@@ -148,12 +148,24 @@ map.addSource('places', {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong></strong><p><a href="#"></a><br>TEL075-<br> 営業時：時から時まで(休み)<br>住所:</p>',
+'<strong>キッチンハリーナ（フェアトレード食堂）（新店舗）</strong><p><a href="https://kitchen-halina.jimdofree.com/">キッチンハリーナは</a>、季節のごはんとゆったり空間、よそではちょっと手に入らない選りすぐりのフェアトレードグッズが自慢です。フェアトレードのコーヒー、紅茶、バナナ、塩、砂糖を使ってい、食事を提供。<br>TEL090-9993-9447<br> 営業時：12:00時から19:00時まで(日、月曜日休み土曜日は、18:00から22:00まで)<br>住所:〒606-8267 京都府京都市左京区北白川西町８５−５</p>',
 'icon': 'rocket'
 },
 'geometry': {
 'type': 'Point',
-'coordinates': [, ]
+'coordinates': [135.7834913, 35.0292086]
+}
+},
+{
+'type': 'Feature',
+'properties': {
+'description':
+'<strong>キッチンハリーナ（フェアトレード食堂）（本店）</strong><p><a href="https://kitchen-halina.jimdofree.com/">キッチンハリーナは</a>、季節のごはんとゆったり空間、よそではちょっと手に入らない選りすぐりのフェアトレードグッズが自慢です。フェアトレードのコーヒー、紅茶、バナナ、塩、砂糖を使ってい、食事を提供。<br>TEL090-9993-9447<br> 営業時：12:00時から19:00時まで(日、月曜日休み土曜日は、18:00から22:00まで)<br>住所:〒606-8267 京都府京都市左京区左京区北白川西町８５−４</p>',
+'icon': 'rocket'
+},
+'geometry': {
+'type': 'Point',
+'coordinates': [135.7835126, 35.0292879]
 }
 }
 ]
