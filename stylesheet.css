@@ -19,7 +19,6 @@ a {
   margin: 0 auto;
   color: red;
 }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; color: black}
 .mapboxgl-popup {
 max-width: 400px;
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
