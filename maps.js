@@ -210,4 +210,14 @@ map.getCanvas().style.cursor = 'pointer';
 map.on('mouseleave', 'places', function() {
 map.getCanvas().style.cursor = '';
 });
+
+map.addControl(
+// Add geolocate control to the map.
+new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+})
+);
 });
