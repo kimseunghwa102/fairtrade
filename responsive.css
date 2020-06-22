@@ -14,10 +14,10 @@
 
 /* モバイル向けレイアウト */
 @media all and (max-width: 670px) {
-/* .header-right{
+.header-right{
   display: none;
 }
-.menu-icon{
+/* .menu-icon{
   display: block;
 } */
 
