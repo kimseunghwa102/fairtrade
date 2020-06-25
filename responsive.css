@@ -79,7 +79,7 @@ label #btn,label #cancel{
     opacity: 0.3;
 }
 label #btn{
-  left: 40px;
+  right: 40px;
   top: 25px;
   font-size: 35px;
   color: white;
