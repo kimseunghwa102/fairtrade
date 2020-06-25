@@ -4,8 +4,8 @@ var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/streets-v9', //hosted style id
     center: [135.767116, 35.012669], // starting position
-    zoom: 2, // starting zoom
-    minZoom: 11 // keep it local
+    zoom: 10, // starting zoom
+    minZoom: 1 // keep it local
 });
 //  geocoder here
 var geocoder = new MapboxGeocoder({
