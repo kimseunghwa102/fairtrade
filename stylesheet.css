@@ -15,7 +15,7 @@ a {
 .container {
   max-width: 1170px;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 15;
   margin: 0 auto;
   color: red;
 }
@@ -23,14 +23,14 @@ a {
 max-width: 400px;
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
-  background-size: cover;
-  background-color: grey;
-  color: white;
-  text-align: center;
-}
+  .top-wrapper {
+    padding: 180px 0 100px 0;
+    /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
+    background-size: cover;
+    background-color: grey;
+    color: white;
+    text-align: center;
+  }
 
 .top-wrapper h1 {
   opacity: 0.7;
@@ -54,12 +54,10 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 /* .signup {
   background-color: #239b76;
 }
-
 .facebook {
   background-color: #3b5998;
   margin-right: 10px;
 }
-
 .twitter {
   background-color: #55acee;
 } */
@@ -143,11 +141,9 @@ header {
   float: left;
   width: 25%;
 }
-
 .lesson-icon {
   position: relative;
 }
-
 .lesson-icon p {
   position: absolute;
   top: 44%;
@@ -201,11 +197,10 @@ footer {
 }
 
 /* -------------------- CSSはここから追加していきましょう！ -------------------- */
-/* .menu-icon{
+.menu-icon{
  color: white;
   float: right;
     font-size: 25px;
     padding: 21px 0;
     display: none;
 }
- */
