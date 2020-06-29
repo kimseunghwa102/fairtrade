@@ -25,43 +25,49 @@
  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <style>
+  <!-- 여기서부터 6섯줄 네비게이션 펑션 -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.js"></script>
+<link
+rel="stylesheet"
+href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.0.2/mapbox-gl-directions.css"
+type="text/css"
+/>
+ <!-- 지도검색용 코드 -->
+<style>
     .geocoder {
         height: 100px;
         width: 150px;
         position: absolute;
-        top: 55px;
+        top: 60px;
         left: 10px;
-        /* background-color: rgba(255, 255, 255, .9); */
         padding: 15px;
         text-align: left;
         font-family: 'Arial';
         margin: 0;
         font-size: 13px;
-
     }
     #instructions {
         position:absolute;
         height: 300px;
         margin:20px;
-        width: 25%;
-        top: 90px;
+        width: 1PX;
+        top: 1px;
         bottom:0;
         padding: 20px;
         background-color: rgba(255,255,255,0.9);
         overflow-y: scroll;
         font-family: sans-serif;
         left: 0;
-        opacity: 0.6;
+        opacity: 0.1;
     }
-
     </style>
-    <div id='map'>      <!-- left side instructions -->
+    <!-- 지도검색용 코드 -->
+    <div id='map'>
           </div>
           <div class="geocoder">
               <div id="geocoder"></div>
           </div>
-          <!-- left side instructions -->
+
           <div id='instructions'>
               <div id="calculated-line"></div>
           </div>
@@ -77,7 +83,7 @@
       <ul>
         <br>
     <li><a href="index.html"><i class="fas fa-qrcode"></i>HOME</a></li>
-    <li><a href="#"><i class="fas fa-link"></i>video</a></li>
+    <li><a href="video.html"><i class="fas fa-link"></i>video</a></li>
     <li><a href="#"><i class="fas fa-stream"></i>Quiz</a></li>
     <li><a href="#"><i class="fas fa-calendar-week"></i>Events</a></li>
     <li><a href="#"><i class="far fa-question-circle"></i>About</a></li>
@@ -114,7 +120,7 @@
         <div class="heading">
           <h2>SDGsの都市、京都をFairTradeで豊かにさせよう</h2>
           <p>Enrich the city of SDGs, Kyoto with FairTrade</p>
-<!--           <img src="cooltext-357238133000387.png" style='width: 90%; left:0; right:0; margin-left: auto; margin-right: auto; height: 90%'> -->
+          <img src="cooltext-357238133000387.png" style='width: 90%; left:0; right:0; margin-left: auto; margin-right: auto; height: 90%'>
           <p>私たちは、SDGsに興味を持っている大学生であり、少しでも京都にフェアトレードを普及させるため、本プロジェクトを計画した。<br>We are university students who are interested in SDGs, and planned this project to spread fair trade in Kyoto as much as possible.</p>
           <p>主な目的は、SDGsが世界で重要視されている中、日本人の学生のため、SDGs分野のフェアトレードについて、無料で問題を提供する。<br> The main purpose is to provide problems for Japanese students to understand about fair trade in the SDGs field, while SDGs are regarded as important in the world.</p>
           <p>さらに、京都市内にある全てのフェアトレードの店をMAPを使って見えるかし、京都に住んでいる学生や市民たちに無料で提供し、フェアトレードの店を活性化させる。<br>In addition, all fair trade shops in Kyoto city can be viewed using the MAP, and provided to students and citizens living in Kyoto free of charge to activate the fair trade shops.</p>
