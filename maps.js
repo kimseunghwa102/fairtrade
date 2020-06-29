@@ -1,13 +1,26 @@
+//지도검색용 체크하기 코드
 mapboxgl.accessToken = 'pk.eyJ1IjoiZmFraHIiLCJhIjoiY2pseXc0djE0MHBibzN2b2h4MzVoZjk4aSJ9.ImbyLtfsfSsR_yyBluR8yQ';
+// 풀 스크린과 드라이브 디력선 코드 믿에 1개
+mapboxgl.accessToken = 'pk.eyJ1Ijoia2ltc2V1bmdod2EiLCJhIjoiY2tiZ2dwYmlxMTVoZDJ1bWVseXg2dWFreiJ9.aiGGvnGULguEMU_wDX2xSg';
 var instructions = document.getElementById('instructions');
 var map = new mapboxgl.Map({
     container: 'map', // container id
     style: 'mapbox://styles/mapbox/streets-v9', //hosted style id
-    center: [135.767116, 35.012669], // starting position
-    zoom: 10, // starting zoom
+    center: [135.767116, 35.012669], // starting position　
+    zoom: 10, // starting zoom　
     minZoom: 1 // keep it local
 });
-//  geocoder here
+//드라이브 디렉션
+map.addControl(
+new MapboxDirections({
+accessToken: mapboxgl.accessToken
+}),
+'top-left'
+);
+// 풀 스크린 코드
+map.addControl(new mapboxgl.FullscreenControl()
+);
+//  geocoder here 맵검색 코드 포인트 코드
 var geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
     // limit results to Australia
@@ -15,10 +28,10 @@ var geocoder = new MapboxGeocoder({
 });
 
 // After the map style has loaded on the page, add a source layer and default
-// styling for a single point.
+// styling for a single point. 맵검색 코드
 map.on('load', function() {
     // Listen for the `result` event from the MapboxGeocoder that is triggered when a user
-    // makes a selection and add a symbol that matches the result.
+    // makes a selection and add a symbol that matches the result. 맵검색 코드
     geocoder.on('result', function(ev) {
         console.log(ev.result.center);
 
@@ -32,7 +45,7 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>Muelek（ムーレック）</strong><p><a href="http://www.kyotodekuraso.com/p/5732" target="_blank" title="Opens in a new window">ムーレック</a>は,アジアを主にする世界の子供支援するを目的とした、フェアトレードのカフェと雑貨屋です。雑貨はどれも手作りで、カフェは築65年の小さな庭を持つ屋です。<br>営業時間	11:00～18:00 <br>定休日 : 水曜日・木曜日<br>TEL 075-462-3311</p>',
+'<strong>Muelek（ムーレック）</strong><p><a href="http://www.kyotodekuraso.com/p/5732" target="_blank" title="Opens in a new window">ムーレック</a>は,アジアを主にする世界の子供支援するを目的とした、フェアトレードのカフェと雑貨屋です。雑貨はどれも手作りで、カフェは築65年の小さな庭を持つ屋です。<br>営業時間	11:00～18:00 <br>定休日 : 水曜日・木曜日<br>TEL 075-462-3311<br>住所：京都府京都市北区等持院南町12-3</p>',
 'icon': 'rocket'
 },
 'geometry': {
@@ -44,7 +57,7 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>楽天堂(自然食品販売・塾)</strong><p> <a href="https://www.rakutendo.com/index.html" target="_blank" title="Opens in a new window">楽天堂の願いは、</a>世界中の人がこぞって肉を食べれば食糧危機は深刻になるばかりだけど、世界中の人が満ち足りた食事ができるように―これが楽天堂・豆料理クラブの願いです。<br>TEL 075-811-4890,FAX 02046656740,<br>営業日：水～土曜（日～火曜＆祝日休),<br> 営業時間：11-7時</p>',
+'<strong>楽天堂(自然食品販売・塾)</strong><p> <a href="https://www.rakutendo.com/index.html" target="_blank" title="Opens in a new window">楽天堂の願いは、</a>世界中の人がこぞって肉を食べれば食糧危機は深刻になるばかりだけど、世界中の人が満ち足りた食事ができるように―これが楽天堂・豆料理クラブの願いです。<br>TEL 075-811-4890,FAX 02046656740,<br>営業日：水～土曜（日～火曜＆祝日休),<br> 営業時間：11-7時<br>住所：〒602-8354 京都府京都市上京区西東町３６４−１４</p>',
 'icon': 'rocket'
 },
 'geometry': {
@@ -56,7 +69,7 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>Globe Mountain Coffee</strong><p><a href="https://shop.globe-mountain-coffee.com/" target="_blank" title="Opens in a new window">Globe Mountain Coffeeは、</a> フェアトレード・オーガニックコーヒー専門店。京都に店舗を構える自家焙煎コーヒーショップです。アジア系のコーヒーを中心に取り揃えています。焙煎したての香り高いコーヒーをお届けします。是非ご利用下さい。<br>TEL075-812-0606<br>営業日：木曜日＆祝日休　<br> 営業時：10時から23時まで</p>',
+'<strong>Globe Mountain Coffee</strong><p><a href="https://shop.globe-mountain-coffee.com/" target="_blank" title="Opens in a new window">Globe Mountain Coffeeは、</a> フェアトレード・オーガニックコーヒー専門店。京都に店舗を構える自家焙煎コーヒーショップです。アジア系のコーヒーを中心に取り揃えています。焙煎したての香り高いコーヒーをお届けします。是非ご利用下さい。<br>TEL075-812-0606<br>営業日：木曜日＆祝日休　<br> 営業時：10時から23時まで<br>住所：〒604-8437 京都府京都市中京区西ノ京東中合町５５ ハイツウエストロード</p>',
 'icon': 'rocket'
 },
 'geometry': {
@@ -68,7 +81,7 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>リボーン(フェアトレードお服販売)</strong><p><a href="http://www.reborn-kyoto.org/" target="_blank" title="Opens in a new window">リボーンは、</a> 日本全国から寄贈された着物地を活用し、主に洋裁の技術指導を通じて途上国の女性の精神的経済的自立を支援している非営利団体。<br>営業時間	10:00～18:00 <br>定休日 : 土曜日・日曜日<br>TEL 075-213-1731</p>',
+'<strong>リボーン(フェアトレードお服販売)</strong><p><a href="http://www.reborn-kyoto.org/" target="_blank" title="Opens in a new window">リボーンは、</a> 日本全国から寄贈された着物地を活用し、主に洋裁の技術指導を通じて途上国の女性の精神的経済的自立を支援している非営利団体。<br>営業時間	10:00～18:00 <br>定休日 : 土曜日・日曜日<br>TEL 075-213-1731<br>住所：〒604-8217 京都府京都市中京区西六角町１０１</p>',
 'icon': 'rocket'
 },
 'geometry': {
@@ -80,7 +93,7 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>株式会社 Hibana</strong><p><a href="https://hibana.co.jp/" target="_blank" title="Opens in a new window">株式会社Hibanaは、</a><br>弊社は「森林バイオマスの利用促進」を目的として2006年に設立しました。バイオマスとは、生物（bio）由来の物質（mass）のことを差し、中でも木が由来の資源を森林（木質）バイオマスと言います。木は、素材として利用するだけでなく、燃焼させてエネルギーとして利用することもできます。そして何より持続可能な資源。「環境へやさしい資源」として、今注目を集めています。<br>営業時間	10:00～19:00 <br>定休日 : 水曜日<br>TEL 075-241-6038</p>',
+'<strong>株式会社 Hibana</strong><p><a href="https://hibana.co.jp/" target="_blank" title="Opens in a new window">株式会社Hibanaは、</a><br>弊社は「森林バイオマスの利用促進」を目的として2006年に設立しました。バイオマスとは、生物（bio）由来の物質（mass）のことを差し、中でも木が由来の資源を森林（木質）バイオマスと言います。木は、素材として利用するだけでなく、燃焼させてエネルギーとして利用することもできます。そして何より持続可能な資源。「環境へやさしい資源」として、今注目を集めています。<br>営業時間	10:00～19:00 <br>定休日 : 水曜日<br>TEL 075-241-6038<br>住所：〒604-0931 京都府京都市中京区 寺町二条下榎木98−7</p>',
 'icon': 'rocket'
 },
 'geometry': {
@@ -104,7 +117,7 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>JIPPO(COFFEE)</strong><p><a href="https://jippo.or.jp/">JIPPO</a>は、現地調査が必要。<br>検証されていない。</p>',
+'<strong>JIPPO(COFFEE)</strong><p><a href="https://jippo.or.jp/">JIPPO</a>は、現地調査が必要。<br>検証されていない。<br>住所：〒600-8358 京都府京都市下京区本願寺門前町</p>',
 'icon': 'rocket'
 },
 'geometry': {
@@ -128,12 +141,12 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>かぜのね</strong><p><a href="#">かぜのね</a>は、現場検証が必要。</p>',
+'<strong>かぜのね</strong><p><a href="#">かぜのね</a>は、現場検証が必要。<br>住所：〒606-8204 京都府京都市左京区田中下柳町７−２</p>',
 'icon': 'rocket'
 },
 'geometry': {
 'type': 'Point',
-'coordinates': [135.7715893, 35.029902]
+'coordinates': [135.773785, 35.029923]　
 }
 },
 {
@@ -237,6 +250,7 @@ trackUserLocation: true
 })
 );
 });
+// 여기서부터 392까지 맵검색 코드 맵추가코드
 var draw = new MapboxDraw({
     displayControlsDefault: false,
     controls: {
@@ -376,4 +390,3 @@ function removeRoute () {
     }
 }
 document.getElementById('geocoder').appendChild(geocoder.onAdd(map));
-
