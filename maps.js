@@ -6,7 +6,14 @@ var map = new mapboxgl.Map({
   zoom: 10, // starting zoom　
   minZoom: 1 // keep it local
 });
-
+//드라이브 디렉션 네비게이션
+map.addControl(
+new MapboxDirections({
+accessToken: mapboxgl.accessToken
+}),
+'top-left'
+);
+// 가게정보표시,기본지도
 map.on('load', function() {
 map.addSource('places', {
   'type': 'geojson',
