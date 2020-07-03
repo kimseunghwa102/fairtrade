@@ -47,7 +47,7 @@ map.on('load', function() {
 'type': 'Feature',
 'properties': {
 'description':
-'<strong>Muelek（雑貨屋andカフェ）</strong><a href="quiz.html" class="btn messagequiz">Quiz</a><p><a href="http://www.kyotodekuraso.com/p/5732" target="_blank" title="Opens in a new window">ムーレック</a>は,アジアを主にする世界の子供支援するを目的とした、フェアトレードのカフェと雑貨屋です。雑貨はどれも手作りで、カフェは築65年の小さな庭を持つ屋です。<br>営業時間	11:00～18:00 <br>定休日 : 水曜日・木曜日<br>TEL 075-462-3311<br>住所：京都府京都市北区等持院南町12-3</p>',
+'<strong>Muelek（雑貨屋andカフェ）</strong><p><a href="http://www.kyotodekuraso.com/p/5732" target="_blank" title="Opens in a new window">ムーレック</a>は,アジアを主にする世界の子供支援するを目的とした、フェアトレードのカフェと雑貨屋です。雑貨はどれも手作りで、カフェは築65年の小さな庭を持つ屋です。<br>営業時間	11:00～18:00 <br>定休日 : 水曜日・木曜日<br>TEL 075-462-3311<br>住所：京都府京都市北区等持院南町12-3</p>',
 'icon': 'cafe'
 },
 'geometry': {
