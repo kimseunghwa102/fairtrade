@@ -20,8 +20,8 @@ var map = new mapboxgl.Map({
 // 'top-left'
 // );
 // 풀 스크린 코드
-map.addControl(new mapboxgl.FullscreenControl()
-);
+// map.addControl(new mapboxgl.FullscreenControl()
+// );
 //  geocoder here 맵검색 코드 포인트 코드
 var geocoder = new MapboxGeocoder({
     accessToken: mapboxgl.accessToken,
