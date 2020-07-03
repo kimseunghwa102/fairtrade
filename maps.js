@@ -6,12 +6,18 @@ var map = new mapboxgl.Map({
   zoom: 10, // starting zoom　
   minZoom: 1 // keep it local
 });
-//드라이브 디렉션 네비게이션
+// 풀 스크린 코드
+map.addControl(new mapboxgl.FullscreenControl()
+);
+// 내실간위치 기본맵 상점정보
 map.addControl(
-new MapboxDirections({
-accessToken: mapboxgl.accessToken
-}),
-'top-left'
+// Add geolocate control to the map.
+new mapboxgl.GeolocateControl({
+positionOptions: {
+enableHighAccuracy: true
+},
+trackUserLocation: true
+})
 );
 // 가게정보표시,기본지도
 map.on('load', function() {
