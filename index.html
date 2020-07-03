@@ -1,85 +1,28 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KYOTO Fair Trade MAP</title>
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
-   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-   <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
-
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
-    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.min.js'></script>
-    <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v2.3.0/mapbox-gl-geocoder.css' type='text/css' />
-    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.0/mapbox-gl-draw.js'></script>
- <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.0.0/mapbox-gl-draw.css' type='text/css'/>
- <style>
+<head>
+  <meta charset="utf-8" />
+  <title>KYOTO Fair Trade MAP</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+  <!-- 기본지도,가게정보  -->
+  <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.0/mapbox-gl.css" rel="stylesheet" />
+  <style>
      body { margin:0; padding:0; }
      #map { position: absolute; top: 0; bottom: 0;width: 100%; height: 80%; margin-top: 55px; color: black}
      /* margin-left: auto; margin-right: auto;  left:0; right:0; */
- </style>
-<!--     스마트폰용 카테고리코드  -->
- <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  </head>
-  <body>
-  <!-- //맵글씨끄기  -->
-  <style>
-  #marker {
-  background-image: url('https://docs.mapbox.com/mapbox-gl-js/assets/washington-monument.jpg');
-  background-size: cover;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  cursor: pointer;
-  }
-
-  .mapboxgl-popup {
-  max-width: 200px;
-  }
   </style>
- <!-- 지도검색용 코드 -->
-<style>
-    .geocoder {
-        height: 100px;
-        width: 150px;
-        position: absolute;
-        top: 60px;
-        left: 10px;
-        padding: 15px;
-        text-align: left;
-        font-family: 'Arial';
-        margin: 0;
-        font-size: 13px;
-    }
-    #instructions {
-        position:absolute;
-        height: 300px;
-        margin:20px;
-        width: 25%;
-        top: 95px;
-        bottom:0;
-        padding: 20px;
-        background-color: rgba(255,255,255,0.9);
-        overflow-y: scroll;
-        font-family: sans-serif;
-        left: 0;
-        opacity: 0.6;
+</head>
+  <body>
+    <style>
+    .mapboxgl-popup {
+    max-width: 400px;
+    font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
     }
     </style>
-    <!-- 지도검색용 코드 -->
-    <div id='map'>
-          </div>
-          <div class="geocoder">
-              <div id="geocoder"></div>
-          </div>
-
-          <div id='instructions'>
-              <div id="calculated-line"></div>
-          </div>
+<div id="map"></div>
     <header>
       <!-- 여기서부터는 스마튼용 카테고리  -->
       <input type="checkbox" id="check" class="checkboxnot">
