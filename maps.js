@@ -5,7 +5,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoia2ltc2V1bmdod2EiLCJhIjoiY2tiZ2dwYmlxMTVoZDJ1b
 var instructions = document.getElementById('instructions');
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/mapbox/streets-v9', //hosted style id
+    style: 'mapbox://styles/mapbox/streets-v11', //hosted style id
     center: [135.767116, 35.012669], // starting position　
     zoom: 10, // starting zoom　
     minZoom: 1 // keep it local
