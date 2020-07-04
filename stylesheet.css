@@ -194,7 +194,10 @@ header {
   top: 7px;
   box-shadow: none;
 }
-
+.shopsimg{
+width: 220px;
+height: 230px;
+}
 footer img {
   width: 125px;
 }
