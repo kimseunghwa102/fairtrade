@@ -8,13 +8,12 @@ var map = new mapboxgl.Map({
   minZoom: 1 // keep it local
 });
 //드라이브 디렉션 네비게이션
-//   map.addControl(
-//   new MapboxDirections(
-// {accessToken: mapboxgl.accessToken}
-//   ),
-//     'top-left'
-//   )
-// if(matchMedia('only screen and (min-width: 600px)').matches){
+  map.addControl(
+  new MapboxDirections(
+{accessToken: mapboxgl.accessToken}
+  ),
+    'top-left'
+  )
 // 풀 스크린 코드
 map.addControl(new mapboxgl.FullscreenControl()
 );
