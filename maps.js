@@ -51,8 +51,8 @@ map.addSource('places', {
   'type': 'Feature',
   'properties': {
   'description':
-  '<strong>楽天堂(自然食品販売・塾)</strong><a href="quiz.html" class="btn messagequiz">Quiz</a><img src="https://www.rakutendo.com/m-club/images/phots/n02.jpg"; class="shopsimg"><p><a href="https://www.rakutendo.com/index.html" target="_blank" title="Opens in a new window">楽天堂の願いは、</a>世界中の人がこぞって肉を食べれば食糧危機は深刻になるばかりだけど、世界中の人が満ち足りた食事ができるように―これが楽天堂・豆料理クラブの願いです。<br>TEL 075-811-4890,FAX 02046656740,<br>営業日：水～土曜（日～火曜＆祝日休),<br> 営業時間：11-7時<br>住所：〒602-8354 京都府京都市上京区西東町３６４−１４</p>',
-  'icon': 'cafe'
+  '<strong>楽天堂(食事・自然食品販売・塾)</strong><a href="quiz.html" class="btn messagequiz">Quiz</a><img src="https://www.rakutendo.com/m-club/images/phots/no1.jpg"; class="shopsimg"><p><a href="https://www.rakutendo.com/index.html" target="_blank" title="Opens in a new window">楽天堂の願いは、</a>世界中の人がこぞって肉を食べれば食糧危機は深刻になるばかりだけど、世界中の人が満ち足りた食事ができるように―これが楽天堂・豆料理クラブの願いです。<br>TEL 075-811-4890,FAX 02046656740,<br>営業日：水～土曜（日～火曜＆祝日休),<br> 営業時間：11-7時<br>住所：〒602-8354 京都府京都市上京区西東町３６４−１４</p>',
+  'icon': 'restaurant'
   },
   'geometry': {
   'type': 'Point',
@@ -75,7 +75,7 @@ map.addSource('places', {
   'type': 'Feature',
   'properties': {
   'description':
-  '<strong>リボーン(フェアトレードお服販売)</strong><a href="quiz.html" class="btn messagequiz">Quiz</a><img src=""><p><a href="http://www.reborn-kyoto.org/" target="_blank" title="Opens in a new window">リボーンは、</a> 日本全国から寄贈された着物地を活用し、主に洋裁の技術指導を通じて途上国の女性の精神的経済的自立を支援している非営利団体。<br>営業時間	10:00～18:00 <br>定休日 : 土曜日・日曜日<br>TEL 075-213-1731<br>住所：〒604-8217 京都府京都市中京区西六角町１０１</p>',
+  '<strong>リボーン(フェアトレードお服販売)</strong><a href="quiz.html" class="btn messagequiz">Quiz</a><img src="http://www.reborn-kyoto.org/2014wp/wp-content/themes/reborn/img/header_fairtradestyle.jpg"; class="shopsimg"><p><a href="http://www.reborn-kyoto.org/" target="_blank" title="Opens in a new window">リボーンは、</a> 日本全国から寄贈された着物地を活用し、主に洋裁の技術指導を通じて途上国の女性の精神的経済的自立を支援している非営利団体。<br>営業時間	10:00～18:00 <br>定休日 : 土曜日・日曜日<br>TEL 075-213-1731<br>住所：〒604-8217 京都府京都市中京区西六角町１０１</p>',
   'icon': 'clothing-store'
   },
   'geometry': {
