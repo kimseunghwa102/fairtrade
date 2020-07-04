@@ -11,7 +11,11 @@
 /* @media all and (max-width: 1000px) {
 
 } */
-
+@media all and (max-width: 700px){
+  .mapboxgl-ctrl-top-left{
+    display: none;
+  }
+}
 /* モバイル向けレイアウト */
 @media all and (max-width: 670px) {
 .header-right{
